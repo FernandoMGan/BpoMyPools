@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bpo My Pools - Menu Principal</title>
+</head>
+<style>
+    .cntd-gral {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../assets/logos/foto\ pileta\ 001.jpg');
+        background-size: cover;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        gap: 20px;
+
+        border: 1px solid blue;
+        border-radius: 5px;
+        width: 430px;
+        align-items: center;
+    }
+
+    .gral-fondo>img {
+        height: 50px;
+    }
+    .gral-nav{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        gap: 10px;
+    }
+    .gral-nav img {
+        height: 50px;
+    }
+    #logNat001 {
+        height: 80px;
+    }
+</style>
+
+<body>
+    <div class="cntd-gral">
+        <div class="gral-nav">
+            <div class="img"><img src="../assets/logos/logoCliente.png" alt="" height="40px"></div>
+            <div class="img"><img src="../assets/logos/natacion 001.png" id="logNat001" alt="" ></div>
+            <div class="box-title">
+                <h3>Bpo My Pools</h3>
+            </div>
+            <div class="img"><img src="../assets/logos/muni sarmiento.png" alt="" height="40px"></div>
+        </div>
+        <div class="buttons"><button onclick="fncGoMenu('btn Cronogramas')">Cronogramas</button></div>
+        <div class="buttons"><button onclick="fncGoMenu('btn Eventos')">Eventos</button></div>
+        <div class="buttons"><button onclick="fncGoMenu('btn Monitoreo')">Monitoreo</button></div>
+        <div class="buttons"><button onclick="fncGoMenu('btn Insumos')">Pedidos de insumos</button></div>
+        <div class="buttons"><button onclick="fncGoMenu('btn SegPedidos')">Seg. de Pedidos</button></div>
+        <div class="buttons"><button onclick="fncGoMenu('btn Hostorico')">Hostorico</button></div>
+        <div class="buttons"><button onclick="fncGoMenu('btn home')">Volver al Home</button></div>
+        <br><br><br>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        <!-- JavaScript para mostrar la ventana emergente -->
+        // Funcion para accionar la menu principal
+        function fncGoMenu(mnuopc) {
+            switch (mnuopc) {
+                case 'btn home':
+                    // Acción a realizar cuando mnuopc es 'btn home'
+                    window.location.href = '../index.html'; // Reemplaza 'ruta_del_home.html' con la ruta correcta de tu página de
+                    inicio.
+                        break;
+                default:
+                    // Acción por defecto si mnuopc no coincide con ningún caso
+                    // alert('pasando por funcion de emergente');
+                    mostrarFormDonateBpo();
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

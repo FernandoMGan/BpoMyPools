@@ -1,0 +1,242 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --error-red: #f30808;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+    --tit-company-font-name: 3.6rem;
+    --tit-company-font-prod: 2.8rem;
+
+    --buttonBorderRadius-brstd: 1rem;
+    /* --posMargLeftFloatMenuCuentaOff: -500px;
+    --posMargLeftFloatMenuCuentaOn: 625px; */
+
+    --tit-company-leg-name: "BPO CHANGE";
+    --app-background-color-fondo: rgba(193, 240, 197, 0.993);
+}
+
+/* -- -- Formato de controles Generales */
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* color: rgb(10, 10, 10); */
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--background-color-fondo);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box-mobile {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-image: url('../assets/logos/foto\ pileta\ 001.jpg');
+    /* background-repeat: repeat; */
+    background-size: cover;
+    height: auto;
+    width: 400px;
+    padding: 30px;
+    margin: 30px;
+    /* margin-left: 210px; */
+    align-items: center;
+}
+
+.nav-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttons {
+    height: 25px;
+    width: 150px;
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos para la imagen */
+.imagen {
+    float: left;
+    margin-right: 20px;
+    height: 50px;
+    max-width: 50px;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    text-align: left;
+}
+
+/* Estilos para el botón de cierre */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para los botones */
+.botones {
+    margin-top: 20px;
+}
+
+.botones button {
+    margin-right: 10px;
+}
+
+/* Selectores de identidad */
+#btnClose{
+    right: 10px;
+}
+#imgDev {
+    height: 150px; /* Reduce el tamaño de la imagen en un 10% */
+    width: 150px; /* Reduce el tamaño de la imagen en un 10% */
+}
+    /* Contenedor principal */
+    .cntd-modal {
+        position: relative;
+        /* Cambio a posición relativa */
+        display: flex;
+        flex-direction: row;
+        border: 1px solid blue;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        left: 20px;
+        height: 430px;
+        width: 96%;
+
+    }
+
+    /* Ajuste de foto de fondo */
+    .cntdImgFndo {
+        position: absolute;
+        /* Cambio a posición absoluta */
+        background-image: url();
+        background-size: cover;
+        border-radius: 5px;
+        /* left: 20px; */
+        height: 430px;
+        width: 99%;
+        z-index: -1;
+        /* Establece un índice Z negativo para que quede detrás */
+    }
+
+    .cntdImgFndo img {
+        height: 99%;
+        width: 99.5%;
+    }
+
+    .cntdImgCompany {
+        display: flex;
+        justify-content: flex-start;
+        width: 30%;
+    }
+
+    .cntdTextos {
+        text-align: center;
+        width: 30%;
+    }
+
+    .cntdImgDevelop {
+        display: flex;
+        justify-content: flex-end;
+        width: 35%;
+    }
+
+    .cntdDonacion {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .btndon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        height: 40px;
+        width: 125px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ajuste por selector de identidad */
+    #fndoCartel {
+        opacity: 0.4;
+    }
+
+    #fndoCompany {
+        opacity: 0.9;
+    }
+
+    #fndoDevelop {
+        opacity: 0.8;
+    }
+
+    /* Estilos para la ventana emergente */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos para el botón de cierre */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
